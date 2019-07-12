@@ -26,7 +26,7 @@ const Useritem = (props)=> {
                                                                  
                                                             </div>
                                                             <a href={repos_url} className="btn btn-dark">Repo</a>
-                                                            <a href={html_url} className="btn btn-dark">More</a>
+                                                            <a href={html_url} className="btn btn-dark" target="blank">More</a>
                                                        </div>
                                           
                                              
