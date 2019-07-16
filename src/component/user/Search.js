@@ -19,7 +19,8 @@ export class Search extends Component {
     e.preventDefault();
     if(this.state.text === ''){
      this.props.setAlert('Please enter text', 'danger')
-    }else {
+    } 
+    else {
      this.props.searchUser(this.state.text);
      this.setState({ text: '' });
     }

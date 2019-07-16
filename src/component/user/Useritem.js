@@ -1,10 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-
+import { Link } from 'react-router-dom'
 const Useritem = (props)=> {
 
      
-          const { login, avatar_url, html_url,repos_url} = props.user;
+          const { login, avatar_url, html_url} = props.user;
           
           return (
               
@@ -25,7 +25,7 @@ const Useritem = (props)=> {
                                                                  </div>
                                                                  
                                                             </div>
-                                                            <a href={repos_url} className="btn btn-dark">Repo</a>
+                                                            <Link to={`/user/${login}`} className="btn btn-dark">User</Link>
                                                             <a href={html_url} className="btn btn-dark" target="blank">More</a>
                                                        </div>
                                           
