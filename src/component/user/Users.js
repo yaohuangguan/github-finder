@@ -12,12 +12,14 @@ const Users = ({users, loading}) => {
      }
      else{
           return (
+               <>
                <div className="row">
-                    <div>
+                   
                          {users.map(user => (
                               <Useritem key={user.id} user={user} />))}
-                    </div>
+                   
                </div>
+               </>
           )
   
      }
