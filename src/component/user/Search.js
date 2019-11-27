@@ -20,6 +20,7 @@ function Search() {
       githubContext.searchUser(text);
       settext("");
     }
+   
   };
 
   return (
